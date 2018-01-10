@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>angular.js</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="abc.js"></script>
+</head>
+<body ng-app="" ng-init="[{name:"arbaz",city:"mumbai"},{name:"sam",city:"pune"},{name:"arbaz",city:"salam"},{name:"africa",city:"mongo"}];">
+
+<h1>uppercase and lower case</h1>
+<p>name:<input type="text" ng-model="name"</p>
+<p>upperxas:{{name |uppercase}}</p>
+<p>lowercase:{{name |lowercase}}</p>
+
+<hr>
+<p>enter ur currency price:<input type="text" ng-model="price"</p>
+
+<p>{{price |currency}}</p>
+<p>{{price |currency:'RS'}}</p>
+
+</body>
+
+</html>

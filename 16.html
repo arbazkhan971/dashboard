@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>angular.js</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+</head>
+<body ng-App="myapp" ng-controller="mycont">
+
+
+<h1>please check browser console right now</h1>
+
+
+
+
+</body>
+<script>
+var app=angular.module("myapp",[]);
+
+
+app.controller("mycont",function($log){
+
+$log.info("this is info");
+$log.warn("thi is warning");
+$log.debug("this is for debugging");
+$log.error("this is a part of error");
+$log.log("this is log");
+
+
+});
+
+
+
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>angular.js</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="abc.js"></script>
+</head>
+<body>
+<h1>ng-repeat directive
+</h1>
+<div ng-app="" ng-init="name=['alpesh','mangesh','suresh','kalpesh'];
+ users=[{name:'arbaz',contact:'123',city:'mum'},{name:'baz',contact:'456',city:'num'},{name:'flow',contact:'987',city:'nagpur'}];">
+<ul>
+<li ng-repeat="x in name">{{x}}</li>
+</ul>
+
+<table align="center" cellpadding="8" cellspacing="0" border="1">
+<tr>
+<td>name</td>
+<td>contact</td>
+<td>city</td>
+</tr>
+<tr ng-repeat="x in users">
+
+<td>{{x.name}}</td>
+<td>{{x.contact}}</td>
+<td>{{x.city}}</td>
+</tr>
+
+
+</table>
+
+
+
+
+</div>
+
+
+</body>
+
+</html>
